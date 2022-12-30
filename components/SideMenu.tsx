@@ -1,23 +1,28 @@
+import Link from "next/link";
 import React from "react";
 
 const SideMenu = () => {
+  const handleClick = () => {
+    document.querySelector<HTMLElement>(".btn-close")?.click();
+  };
+
   return (
     <>
       <ul className="navigation-menu">
         <li>
-          <a href="#/" data-text="Trang chủ">
+          <Link href="/" data-text="Trang chủ" onClick={handleClick}>
             Trang chủ
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#/" data-text="Danh mục">
+          <Link href="/category" data-text="Danh mục" onClick={handleClick}>
             Danh mục
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#/" data-text="Thông tin">
+          <Link href="#/" data-text="Thông tin" onClick={handleClick}>
             Thông tin
-          </a>
+          </Link>
         </li>
       </ul>
     </>

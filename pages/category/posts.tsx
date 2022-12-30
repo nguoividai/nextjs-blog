@@ -1,15 +1,13 @@
 import Head from "next/head";
-import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
-import Layout from "../components/Layout";
+import styles from "styles/Home.module.css";
 import { ReactElement } from "react";
 import BlogList from "components/card/BlogList";
-import categoryStyles from "../styles/module/Category.module.css";
-import BlogCard from "components/card/BlogCard";
+import categoryStyles from "styles/module/Category.module.css";
 import Category from "components/card/Category";
 import Timeline from "components/timeline/Timeline";
+import Layout from "components/Layout";
 
-export default function Home() {
+export default function Posts() {
   return (
     <>
       <Head>
@@ -20,21 +18,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className="container">
-          <div className="row">
-            <div className="col-6 col-md-3">
-              <Category />
-            </div>
-            <div className="col-6 col-md-3">
-              <Category />
-            </div>
-            <div className="col-6 col-md-3">
-              <Category />
-            </div>
-            <div className="col-6 col-md-3">
-              <Category />
-            </div>
-          </div>
-          <div className={categoryStyles["heading"]}>Bài viết mới nhất</div>
+          <div className={categoryStyles["heading"]}>Javascript</div>
           <div className="row">
             <div className="col-12 col-md-9">
               {[...Array(10)].map((_, i) => (
@@ -64,6 +48,6 @@ export default function Home() {
   );
 }
 
-Home.getLayout = function getLayout(page: ReactElement) {
+Posts.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };

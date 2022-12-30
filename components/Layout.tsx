@@ -3,24 +3,25 @@ import React from "react";
 import Image from "next/image";
 import style from "styles/module/Layout.module.css";
 import SideMenu from "./SideMenu";
+import Link from "next/link";
 
 type LayoutProps = {
   children: React.ReactNode;
 };
-
-const josefinSans = Josefin_Sans();
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
       <div className={style["app-header"]}>
         <div className="logo">
-          <Image
-            src="/assets/images/top-logo.png"
-            alt="logo"
-            width={200}
-            height={50}
-          />
+          <Link href="/">
+            <Image
+              src="/assets/images/top-logo.png"
+              alt="logo"
+              width={200}
+              height={50}
+            />
+          </Link>
         </div>
         <div className="action">
           <div

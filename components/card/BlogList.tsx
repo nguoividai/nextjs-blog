@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogList = () => {
   return (
@@ -21,9 +22,9 @@ const BlogList = () => {
           </div>
           <div className="blog--extra">
             <i className="icofont-clock-time"></i> 4 Min
-            <a className="btn-read-more" href="#/">
+            <Link className="btn-read-more" href="/posts/post-detail">
               <i className="icofont-swoosh-right"></i> Đọc thêm
-            </a>
+            </Link>
           </div>
         </div>
       </div>

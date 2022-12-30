@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const BlogCard = () => {
   return (
@@ -25,9 +26,9 @@ const BlogCard = () => {
             <span className="m-3">Javascript</span>
           </div>
           <div className="text-end mt-3">
-            <a href="#/">
+            <Link href="/posts/post-detail">
               <i className="icofont-swoosh-right"></i> Đọc thêm
-            </a>
+            </Link>
           </div>
         </div>
       </div>

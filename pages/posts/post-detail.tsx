@@ -4,6 +4,7 @@ import React, { ReactElement } from "react";
 import styles from "../../styles/Home.module.css";
 import postStyles from "../../styles/module/Post.module.css";
 import Image from "next/image";
+import categoryStyles from "styles/module/Category.module.css";
 
 const PostDetail = () => {
   return (
@@ -69,6 +70,43 @@ const PostDetail = () => {
               lược hoàn toàn mới của Apple, nhưng lại có phần nào khá giống với
               của Samsung.
             </div>
+          </div>
+        </div>
+
+        <div className={postStyles["comment-container"]}>
+          <div className={categoryStyles["heading"]}>Để lại ý kiến</div>
+          <div className="mt-3">
+            <textarea
+              className="form-control"
+              aria-label="Comment"
+              placeholder="Nhập bình luận"
+              rows={5}
+            ></textarea>
+          </div>
+          <div className="row mt-3">
+            <div className="col-6">
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Email"
+                aria-label="email"
+                aria-describedby="email"
+              />
+            </div>
+            <div className="col-6">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Tên hiển thị"
+                aria-label="name"
+                aria-describedby="name"
+              />
+            </div>
+          </div>
+          <div className="mt-3 text-end">
+            <button type="button" className="btn btn-primary">
+              <i className="icofont-send-mail"></i> Gửi
+            </button>
           </div>
         </div>
       </main>

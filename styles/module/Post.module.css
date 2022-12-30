@@ -36,3 +36,8 @@
     width: 750px;
   }
 }
+
+.comment-container {
+  padding: 2rem;
+  width: 100%;
+}
