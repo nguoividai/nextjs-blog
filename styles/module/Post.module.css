@@ -1,0 +1,38 @@
+.post-container {
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.post-title {
+  color: rgb(240, 240, 240);
+  animation: revealTextAnimation 0.8s ease forwards;
+  font-size: 2.25rem;
+  padding-bottom: 2rem;
+  font-weight: bold;
+}
+
+.post-title::after {
+  content: "";
+  display: block;
+  width: 35%;
+  margin: 2rem 0;
+  border: 2px solid #ddd;
+}
+
+.post-content {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-size: 1.25rem;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .post-container {
+    width: 550px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .post-container {
+    width: 750px;
+  }
+}

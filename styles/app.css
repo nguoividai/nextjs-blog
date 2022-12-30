@@ -1,0 +1,51 @@
+.modal-backdrop.show {
+  z-index: -1;
+}
+
+/* CUSTOM SIDEBAR */
+.sidebar .modal-content {
+  background-color: #000;
+  color: var(--app-color-white);
+}
+
+.sidebar .btn-close {
+  color: var(--app-color-white);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.sidebar .btn-close:hover {
+  color: var(--app-color-white-hover);
+}
+
+.sidebar .modal-header,
+.sidebar .modal-footer {
+  border: 0;
+}
+
+.sidebar .modal-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #202020;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

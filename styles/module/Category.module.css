@@ -1,0 +1,14 @@
+.heading {
+  font-family: Josefin sans !important;
+  font-size: 2.5rem;
+  margin-right: calc(0.5 * var(--bs-gutter-x));
+  margin-left: calc(0.5 * var(--bs-gutter-x));
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 10%;
+  margin: 1.25rem 0;
+  border: 2px solid #ddd;
+}
